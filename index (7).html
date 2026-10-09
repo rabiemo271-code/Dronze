@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DRONZE Marketing | Clear. Bold. Focused.</title>
+<meta name="description" content="DRONZE Marketing is a bold, modern agency for brand identity, digital strategy and growth campaigns.">
+<meta name="theme-color" content="#092C51">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}
+</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="dz" viewBox="0 0 723 300">
+    <path fill="currentColor" d="M26 0H272C340 0 390 50 390 115C390 160 365 185 345 200C310 230 270 260 240 288Q225 298 205 298H26Q0 298 0 272V26Q0 0 26 0Z"/>
+    <path fill="currentColor" d="M351 0H698Q723 0 723 24Q723 36 714 44L452 284Q447 288 438 289L303 299Q285 300 287 287Q289 278 296 272L520 85Q505 84 495 81Q488 80 484 77Z"/>
+    <circle fill="#E70221" cx="594" cy="250" r="56"/>
+  </symbol>
+</svg>
+
+<canvas id="scene" aria-label="Rotatable glass cube. Drag to rotate."></canvas>
+<p class="fb" aria-hidden="true">CLEAR<br>BOLD<br>FOCUSED</p>
+
+<div class="hero-wrap" id="heroWrap">
+<section class="hero" id="hero">
+  <div class="ui">
+    <h1 class="sr-only" id="h1">Clear. Bold. Focused.</h1>
+    <header class="nav">
+      <a href="#hero" class="logo" aria-label="DRONZE Marketing home"><svg class="lm"><use href="#dz"/></svg><span class="lw">MARKETING</span></a>
+      <ul class="nav-links">
+        <li><a href="#about"><span class="roll"><span>About</span><span aria-hidden="true">About</span></span></a></li>
+        <li><a href="#services"><span class="roll"><span>Services</span><span aria-hidden="true">Services</span></span></a></li>
+        <li><a href="#contact"><span class="roll"><span>Contact</span><span aria-hidden="true">Contact</span></span></a></li>
+        <span class="nav-dot" aria-hidden="true"></span>
+      </ul>
+    </header>
+
+
+    <nav class="dots" aria-label="Slides">
+      <button class="dot active" aria-label="Slide 1" aria-current="true"></button>
+      <button class="dot" aria-label="Slide 2"></button>
+      <button class="dot" aria-label="Slide 3"></button>
+    </nav>
+
+    <p class="tagline" id="tagline" aria-live="polite">Bold presence<br>without unnecessary<br><strong>decoration.</strong></p>
+
+    <div class="cta-row">
+      <a href="#about" class="cta">Explore now</a>
+      <span class="cta-line"></span>
+      <span class="count" id="count" aria-hidden="true">01</span>
+    </div>
+    <div class="loader" id="loader">Loading model</div>
+  </div>
+</section>
+</div>
+
+<div class="marq" aria-hidden="true"><div>BRANDING <i></i> SOCIAL MEDIA <i></i> PERFORMANCE ADS <i></i> WEBSITES <i></i> CONTENT <i></i> STRATEGY <i></i> BRANDING <i></i> SOCIAL MEDIA <i></i> PERFORMANCE ADS <i></i> WEBSITES <i></i> CONTENT <i></i> STRATEGY <i></i> </div></div>
+
+<section id="about" class="sec L">
+  <div class="glass rv">
+    <h2>Marketing with one clear message<i class="dot-r"></i></h2>
+    <p class="body">DRONZE is a marketing agency for brands that want to be seen and remembered. We combine sharp strategy, bold design and measurable campaigns, so every message is short, direct and built to get a result.</p>
+    <div class="stats">
+      <div><b data-count="120" data-suffix="+">120+</b><span>campaigns launched</span></div>
+      <div><b data-count="45" data-suffix="+">45+</b><span>brands supported</span></div>
+      <div><b data-count="3" data-suffix="x">3x</b><span>average lead growth</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="sec R">
+  <h2 class="rv">What we do<i class="dot-r"></i></h2>
+  <div class="svc">
+    <div class="rv"><article class="card"><span class="ico"><svg class="ic ic-brand" viewBox="0 0 723 300" aria-hidden="true"><use href="#dz"/></svg></span><h3>Brand identity</h3><p>Logos, color, type and guidelines that make you easy to recognize.</p></article></div>
+    <div class="rv" style="--d:80ms"><article class="card"><span class="ico"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><circle class="s r1" cx="24" cy="24" r="19"/><circle class="s r2" cx="24" cy="24" r="10"/><circle class="f" cx="24" cy="24" r="3.6"/></svg></span><h3>Strategy and research</h3><p>Audience, positioning and a plan with clear goals and a budget.</p></article></div>
+    <div class="rv"><article class="card"><span class="ico"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><path class="s" d="M9 8h30a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H23l-9 7v-7H9a4 4 0 0 1-4-4V12a4 4 0 0 1 4-4z"/><circle class="dt" style="fill:#fff" cx="15" cy="21" r="2.3"/><circle class="dt f" style="animation-delay:.1s" cx="24" cy="21" r="2.6"/><circle class="dt" style="fill:#fff;animation-delay:.2s" cx="33" cy="21" r="2.3"/></svg></span><h3>Social media</h3><p>Content, design and community management that keep people engaged.</p></article></div>
+    <div class="rv" style="--d:80ms"><article class="card"><span class="ico"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><rect class="b b1" x="7" y="27" width="9" height="14" rx="2.5"/><rect class="b b2" x="19.5" y="18" width="9" height="23" rx="2.5"/><rect class="b b3" x="32" y="7" width="9" height="34" rx="2.5"/></svg></span><h3>Performance ads</h3><p>Paid campaigns on Meta, Google and TikTok, tracked to real leads.</p></article></div>
+    <div class="rv"><article class="card"><span class="ico"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><rect class="s" x="5" y="8" width="38" height="32" rx="5"/><path class="s" d="M5 17.5h38"/><circle class="f" cx="11.5" cy="12.8" r="1.9"/><path class="s ln l1" d="M12 26h14"/><path class="s ln l2" d="M12 32h24"/></svg></span><h3>Websites</h3><p>Fast, responsive sites and landing pages built to convert.</p></article></div>
+    <div class="rv" style="--d:80ms"><article class="card"><span class="ico"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><circle class="s rg" cx="24" cy="24" r="19"/><path class="f tri" d="M20 16.5l14 7.5-14 7.5z"/></svg></span><h3>Content and video</h3><p>Photo, video and copy with a clean, premium commercial look.</p></article></div>
+  </div>
+</section>
+
+<section id="process" class="sec L">
+  <h2 class="rv">From brief to results<i class="dot-r"></i></h2>
+  <ol class="steps" id="steps">
+    <li class="glass rv"><h3>Discover</h3><p>We learn your business, audience and goals.</p></li>
+    <li class="glass rv" style="--d:80ms"><h3>Plan</h3><p>You get a strategy, timeline and budget up front.</p></li>
+    <li class="glass rv"><h3>Create</h3><p>Design and copy, with review rounds built in.</p></li>
+    <li class="glass rv" style="--d:80ms"><h3>Launch and improve</h3><p>We go live and optimize every week from the data.</p></li>
+  </ol>
+</section>
+
+<section id="contact" class="sec C">
+  <div class="grid g2">
+    <div class="glass rv cinfo">
+      <h2>Stay focused. Start a project<i class="dot-r"></i></h2>
+      <p class="body">Tell us what you need and we will reply within one business day.</p>
+      <div class="crow static"><span class="pulse"></span><div><b>We reply within one business day</b></div></div>
+      <button type="button" class="copy" data-copy="hello@dronze.com"><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></span><span><small>Email</small><b>hello@dronze.com</b></span><em>Copy</em></button>
+      <a class="crow" href="tel:+201000000000"><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><span><small>Phone</small><b>+20 100 000 0000</b></span></a>
+      <ol class="next"><li><b>1</b>We review your brief</li><li><b>2</b>A short call to align</li><li><b>3</b>You get a clear proposal</li></ol>
+    </div>
+
+    <form id="form" class="glass rv" style="--d:120ms" novalidate>
+      <div class="prog"><span id="bar"></span></div>
+      <div class="stepl" id="stepl"><b id="stepn">1</b> / 2 &nbsp;<span id="stept">About you</span></div>
+
+      <div class="fstep on" data-step="1">
+        <div class="fld"><input id="f-name" name="name" placeholder=" " autocomplete="name"><label for="f-name">Your name</label><span class="err">Please enter your name</span></div>
+        <div class="fld"><input id="f-email" name="email" type="email" placeholder=" " autocomplete="email"><label for="f-email">Email address</label><span class="err">Please enter a valid email</span></div>
+        <div class="fld"><input id="f-co" name="company" placeholder=" " autocomplete="organization"><label for="f-co">Company (optional)</label></div>
+        <div class="btns"><button type="button" class="submit" data-next>Continue</button></div>
+      </div>
+
+      <div class="fstep" data-step="2">
+        <p class="lab">What do you need?</p>
+        <div class="chips" id="chips"><button type="button" class="chip" aria-pressed="false">Brand identity</button><button type="button" class="chip" aria-pressed="false">Strategy</button><button type="button" class="chip" aria-pressed="false">Social media</button><button type="button" class="chip" aria-pressed="false">Performance ads</button><button type="button" class="chip" aria-pressed="false">Website</button><button type="button" class="chip" aria-pressed="false">Content and video</button></div>
+        <p class="lab">Budget <output id="bud">$5k to $10k</output></p>
+        <input type="range" id="budget" min="0" max="4" step="1" value="2" aria-label="Budget">
+        <div class="fld"><textarea id="f-msg" name="msg" rows="4" maxlength="500" placeholder=" "></textarea><label for="f-msg">Project details</label><small class="cnt"><span id="cnt">0</span>/500</small><span class="err">Tell us a little about the project</span></div>
+        <div class="btns"><button type="button" class="ghost" data-back>Back</button><button type="submit" class="submit" id="send">Send message</button></div>
+      </div>
+
+      <div class="fstep done" id="done" aria-live="polite">
+        <svg class="tick" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28"/><path d="m20 33 8 8 16-17"/></svg>
+        <h3>Thank you<i class="dot-r"></i></h3>
+        <p class="body" id="donetxt">Your email app should open with your brief ready to send. If it doesn't, copy the summary and email it to hello@dronze.com.</p>
+        <div class="btns"><button type="button" class="submit" id="copysum">Copy summary</button><button type="button" class="ghost" id="again">Start over</button></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<footer class="footer">
+  <a href="#hero" class="logo" aria-label="Back to top"><svg class="lm"><use href="#dz"/></svg><span class="lw">MARKETING</span></a>
+  <small>&copy; <span id="year">2026</span> DRONZE Marketing. All rights reserved.</small>
+</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
