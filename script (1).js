@@ -383,7 +383,7 @@ const toast = document.getElementById('toast');
 const TIERS = ['Under $2k', '$2k to $5k', '$5k to $10k', '$10k to $25k', '$25k+'];
 const TITLES = { 1: 'About you', 2: 'Your project' };
 // Paste your Google Apps Script web app URL here to receive messages in a Sheet and by email
-const FORM_ENDPOINT = '';
+const FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwBY8o-hnusq3cmKsAa-wnQKaIgcJNgYzN8FBPh3qW8z4NZjP43ZQqk3OtaQDq8aOeCPg/exec';
 let toastT = 0, summary = '';
 
 function say(msg) {
